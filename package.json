@@ -1,0 +1,52 @@
+{
+	"name": "stacksvg",
+	"description": "Stack SVG icons in a stack sprite, not symbolic.",
+	"version": "0.0.1",
+	"type": "module",
+	"exports": "./lib/index.js",
+	"files": [
+		"./lib/index.js"
+	],
+	"dependencies": {
+		"fast-xml-parser": "^4.3.2",
+		"globby": "^13.2.2"
+	},
+	"engines": {
+		"node": ">=18"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Sergey Artemov",
+		"email": "firefoxic.dev@gmail.com"
+	},
+	"homepage": "https://github.com/stacksvg/stacksvg",
+	"bugs": {
+		"url": "https://github.com/stacksvg/stacksvg/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/stacksvg/stacksvg"
+	},
+	"keywords": [
+		"svg",
+		"icon",
+		"stack",
+		"sprite"
+	],
+	"scripts": {
+		"prepare": "husky install",
+		"lint:ec": "ec",
+		"lint:es": "eslint . --ignore-path .gitignore",
+		"lint": "pnpm /^lint:/",
+		"test": "node --test",
+		"pretest": "pnpm lint",
+		"preversion": "pnpm test",
+		"postversion": "pnpm publish",
+		"postpublish": "git push origin --all && git push origin --tags"
+	},
+	"devDependencies": {
+		"editorconfig-checker": "^5.1.1",
+		"eslint": "^8.51.0",
+		"husky": "^8.0.3"
+	}
+}
