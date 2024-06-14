@@ -8,7 +8,7 @@
 		"./lib/index.js"
 	],
 	"dependencies": {
-		"fast-xml-parser": "^4.3.2",
+		"fast-xml-parser": "^4.4.0",
 		"globby": "^13.2.2"
 	},
 	"engines": {
@@ -45,8 +45,8 @@
 		"postpublish": "git push origin --all && git push origin --tags"
 	},
 	"devDependencies": {
-		"editorconfig-checker": "^5.1.1",
-		"eslint": "^8.51.0",
+		"editorconfig-checker": "^5.1.8",
+		"eslint": "^8.57.0",
 		"husky": "^8.0.3"
 	}
 }
