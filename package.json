@@ -36,7 +36,7 @@
 	"scripts": {
 		"prepare": "husky install",
 		"lint:ec": "ec",
-		"lint:es": "eslint . --ignore-path .gitignore",
+		"lint:es": "eslint . --ignore-pattern .gitignore",
 		"lint": "pnpm /^lint:/",
 		"test": "node --test",
 		"pretest": "pnpm lint",
@@ -45,8 +45,11 @@
 		"postpublish": "git push origin --all && git push origin --tags"
 	},
 	"devDependencies": {
+		"@eslint/eslintrc": "^3.1.0",
+		"@eslint/js": "^9.4.0",
 		"editorconfig-checker": "^5.1.8",
-		"eslint": "^8.57.0",
+		"eslint": "^9.4.0",
+		"globals": "^15.4.0",
 		"husky": "^9.0.11"
 	}
 }
