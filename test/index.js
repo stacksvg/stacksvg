@@ -1,11 +1,12 @@
-import { test } from "node:test"
 import { equal } from "node:assert/strict"
+import { test } from "node:test"
 
 import { stacksvg } from "../lib/index.js"
 
 test(`StackSVG should not create empty svg file`, async () => {
 	const actual = await stacksvg({ inputDir: `./test/fixture/`, patterns: [`empty.svg`] })
 	const expected = undefined
+
 	equal(actual, expected)
 })
 
