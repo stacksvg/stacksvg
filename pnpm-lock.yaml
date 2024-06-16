@@ -18,9 +18,6 @@ importers:
       '@firefoxic/eslint-config':
         specifier: ^2.0.0
         version: 2.0.0(eslint@9.5.0)
-      editorconfig-checker:
-        specifier: ^5.1.8
-        version: 5.1.8
       eslint:
         specifier: ^9.5.0
         version: 9.5.0
@@ -168,11 +165,6 @@ packages:
 
   deep-is@0.1.4:
     resolution: {integrity: sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==}
-
-  editorconfig-checker@5.1.8:
-    resolution: {integrity: sha512-GM/qCbXA8GajSqqjXiWZN49i0nizQV5PjkVKIwWB9rtsm/pztjnBC+4dts5wW2KdrP2zyMPEltWHtWQwoCadqg==}
-    engines: {node: '>=18.0.0'}
-    hasBin: true
 
   escape-string-regexp@4.0.0:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
@@ -605,8 +597,6 @@ snapshots:
       ms: 2.1.2
 
   deep-is@0.1.4: {}
-
-  editorconfig-checker@5.1.8: {}
 
   escape-string-regexp@4.0.0: {}
 

@@ -36,9 +36,7 @@
 	],
 	"scripts": {
 		"prepare": "husky",
-		"lint:ec": "ec",
-		"lint:es": "eslint",
-		"lint": "pnpm /^lint:/",
+		"lint": "eslint",
 		"test": "node --test",
 		"pretest": "pnpm lint",
 		"preversion": "pnpm test",
@@ -47,7 +45,6 @@
 	},
 	"devDependencies": {
 		"@firefoxic/eslint-config": "^2.0.0",
-		"editorconfig-checker": "^5.1.8",
 		"eslint": "^9.5.0",
 		"husky": "^9.0.11"
 	}
