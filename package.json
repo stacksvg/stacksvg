@@ -2,25 +2,12 @@
 	"name": "stacksvg",
 	"description": "Stack SVG icons in a stack sprite, not symbolic.",
 	"version": "0.0.1",
-	"type": "module",
-	"exports": "./lib/index.js",
-	"files": [
-		"./lib/index.js"
-	],
-	"dependencies": {
-		"fast-xml-parser": "^4.4.0",
-		"globby": "^14.0.1"
-	},
-	"engines": {
-		"node": ">=18"
-	},
-	"packageManager": "pnpm@9.3.0",
 	"license": "MIT",
 	"author": {
 		"name": "Sergey Artemov",
 		"email": "firefoxic.dev@gmail.com"
 	},
-	"homepage": "https://github.com/stacksvg/stacksvg",
+	"homepage": "https://github.com/stacksvg/stacksvg#readme",
 	"bugs": {
 		"url": "https://github.com/stacksvg/stacksvg/issues"
 	},
@@ -28,12 +15,19 @@
 		"type": "git",
 		"url": "git://github.com/stacksvg/stacksvg"
 	},
-	"keywords": [
-		"svg",
-		"icon",
-		"stack",
-		"sprite"
+	"type": "module",
+	"exports": "./lib/index.js",
+	"files": [
+		"./lib/"
 	],
+	"engines": {
+		"node": ">=18"
+	},
+	"packageManager": "pnpm@9.3.0",
+	"dependencies": {
+		"fast-xml-parser": "^4.4.0",
+		"globby": "^14.0.1"
+	},
 	"scripts": {
 		"prepare": "husky",
 		"lint": "eslint",
@@ -49,5 +43,11 @@
 		"@firefoxic/update-changelog": "^0.1.0",
 		"eslint": "^9.5.0",
 		"husky": "^9.0.11"
-	}
+	},
+	"keywords": [
+		"svg",
+		"icon",
+		"stack",
+		"sprite"
+	]
 }
