@@ -41,7 +41,7 @@
 		"pretest": "pnpm lint",
 		"preversion": "pnpm test",
 		"postversion": "pnpm publish",
-		"postpublish": "git push origin --all && git push origin --tags"
+		"postpublish": "git push --follow-tags"
 	},
 	"devDependencies": {
 		"@firefoxic/eslint-config": "^2.0.0",
